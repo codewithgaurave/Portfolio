@@ -1,0 +1,781 @@
+/* Nav Bar Section */
+.navBar{
+    position: fixed;
+    top: 0px;
+    right: 80px;
+    z-index: 9999;
+}
+.navBar ul{
+    list-style: none;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+.navBar ul li{
+    display: inline-block;
+    height: 7rem;
+    width: 3.85rem;
+    margin-right: 20px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: all .2s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.3rem;
+    &:hover{
+        height: 10rem;
+    }
+
+}
+.navBar ul a{
+    height: fit-content;
+    &:nth-child(1) li{
+        background-color: var(--nav-stick) !important;
+    }
+    &:nth-child(2) li{
+        background-color: var(--nav-stick1);
+    }
+    &:nth-child(3) li{
+        background-color: var(--nav-stick2);
+    }
+    &:nth-child(4) li{
+        background-color: var(--nav-stick3);
+    }
+}
+.navBar ul li span{
+    position: absolute;
+    bottom: 30px;
+    pointer-events: inherit;
+    left: 50%;
+    translate: -50%;
+    transform: rotate(-90deg);
+}
+ul a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Hero Section */
+.headText{
+    font-family: 'Caveat_Brush',sans-serif;
+    font-size: 50px;
+    position: relative;
+
+}
+.selfImage{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+}
+.selfImage img{
+
+
+    &:nth-child(1){
+        z-index: 999;
+        position: absolute;
+        top: -30px;
+        right: 35%;
+        height: 90px;
+        width: 90px;
+    }
+    &:nth-child(2){
+        z-index: 1;
+        height: 500px;
+        width: 550px;
+    }
+}
+.heroT1{
+    font-size: 38px;
+}
+.heroT2{
+    font-size: 60px;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+.heroT3{
+    font-size: 35px;
+}
+
+.Socials ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.Socials ul li{
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* About ME Section  */
+.stickCol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.StickyNote{
+    display: block;
+    /* height: 450px; */
+    width: 500px;
+    position: relative;
+    &:hover{
+        transform: rotate(0deg) !important;
+        cursor:grab;
+    }
+}
+.hover-reset-rotate:hover{
+    transform: rotate(0deg) !important;
+    cursor:grab;
+}
+.StickyNote img{
+    position: absolute;
+    /* top: -75px; */
+    left: 50%;
+    transform: translate(-50%);
+}
+.About-text{
+    font-size: 40px;
+}
+
+.dh{
+    font-family: 'Text_bold',sans-serif;
+    font-size: 35px;
+    white-space: nowrap;
+}
+.dd{
+    font-family: 'Text_regular',sans-serif;
+    font-size: 40px;
+}    
+.aboutStick2 .head{
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+.skillHead{
+    font-size: 30px;
+}
+.skills p{
+    font-family: 'Text_regular',sans-serif;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Projects Section */
+.techStack p{
+    position: absolute;
+    top: 110px;
+    left: 80px;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+}
+.techStack p span{
+    font-size: 50px;
+}
+.techStack img{
+    width: 400px;
+}
+.project-head-text{
+    font-size: 40px;
+}
+.project-head-text .img{
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    width: 500px;
+}
+.projectSS img{
+    &:nth-child(1){
+        width: 570px;
+    }
+    &:nth-child(2){
+        position: absolute;
+        right: -10px;
+        top :-40px
+    }
+}
+.reverbNation img:nth-child(2){
+    right: 34px !important;
+    top: -60px !important;
+}
+.flappyBird img{
+    &:nth-child(1){
+        width: 450px !important;
+    }
+    &:nth-child(2){
+        right: -65px;
+        top :-57px
+    }
+}
+
+.project-description{
+    font-size: 25px;
+}
+.keyFeatures span{
+    font-family: 'Text_bold',sans-serif;
+
+}
+
+/* Kind Words Section  */
+.kindWordGrid {  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: 1fr;
+    gap: 50px 10px;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+.kindWordsText{
+    display: flex;
+    flex-direction: column;
+}
+.kindWordsText p{
+    font-size: 27px;
+    padding: 0px;
+    margin: 0px;
+}
+.kindWordsText span{
+    font-size: 20px;
+    text-align: end;
+    width: 100%;
+}
+
+/* Connect with me seciton  */
+.connectText{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.connectText span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Letter CSs */
+.Envelop-container{
+   width: fit-content;
+   height: fit-content;
+   cursor: pointer;
+   transform-style: preserve-3d;
+   transform: perspective(2500px);
+   &:hover .triangle3{
+    transform: rotateX(0deg); 
+    transition: .5s;
+    border-radius: 0px;
+    z-index: -20;
+
+   }
+   &:hover .triangle , &:hover .triangle2, &:hover .letter-middle{
+    border-radius: 0px;
+   }
+   &:hover .letter{
+    top: -250px;
+    height: 400px;
+   }
+}
+.triangle3{
+    border-radius: 15px;
+    z-index: 999;
+    transition: .5s;
+    transition-delay: 1s;
+    transform-origin: bottom;
+    position: relative;
+    --r: 2px;
+    width: 550px;
+    height: 224px;
+    aspect-ratio: 1/cos(30deg);
+    -webkit-mask:
+      linear-gradient(#0000 calc(3*var(--r)/2),#000 0),
+      radial-gradient(var(--r) at 50% calc(2*var(--r)),#000 98%,#0000 101%);
+    clip-path: polygon(50% 0,100% 100%,0 100%);
+    transform: rotateX(-160deg); 
+    box-shadow: 30px 0 50px rgba(0,0,0,0.2);
+    overflow: visible;
+
+    background-color: #9c92ac;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23e4c88b' fill-opacity='0.82' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");}
+
+.triangle {
+    z-index: 999;
+    border-radius: 15px;
+
+    --r:-8px; /* border radius */
+    height: 200px;
+    width: 275px;
+    aspect-ratio: 1;
+    border-bottom-left-radius: var(--r);
+    clip-path: polygon(0 0,100% 100%,0 100%);
+    --_g:calc(50%*(1 + 1/tan(22.5deg)) - var(--r)/(3*sqrt(2) - 4));
+    --_r:calc(var(--r)/tan(22.5deg)),#000 98%,#0000 101%;
+    -webkit-mask:
+      radial-gradient(var(--r) at bottom var(--r) right var(--_r)),
+      radial-gradient(var(--r) at left   var(--r) top   var(--_r)),
+      conic-gradient(from 202.5deg at var(--_g) calc(100% - var(--_g)),#000 45deg,#0000 0);
+    background: var(--sticky-color1);
+  }
+.triangle2{
+    z-index: 999;
+    border-radius: 15px;
+
+    --r:-8px; /* border radius */
+    height: 200px;
+    width: 275px;
+    aspect-ratio: 1;
+    border-bottom-right-radius: var(--r);
+    clip-path: polygon(100% 0,0 100%,100% 100%);
+    --_g:calc(50%*(1 + 1/tan(22.5deg)) - var(--r)/(3*sqrt(2) - 4));
+    --_r:calc(var(--r)/tan(22.5deg)),#000 98%,#0000 101%;
+    -webkit-mask:
+      radial-gradient(var(--r) at bottom var(--r) left var(--_r)),
+      radial-gradient(var(--r) at right  var(--r) top  var(--_r)),
+      conic-gradient(from 112.5deg at calc(100% - var(--_g)) calc(100% - var(--_g)),#000 45deg,#0000 0);
+    background: var(--sticky-color1);
+  }
+.rectangle{
+    z-index: 999;
+    margin-top: -7px;
+    width: 550px;
+    height: 200px;
+    display: block;
+    background-color: var(--sticky-color1);
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    font-size: 30px;
+
+}
+.letter{
+    position: absolute;
+    z-index: -1;
+    width: 490px;
+    height: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    background-color: var(--sticky-color3);
+    transition: .5s ease-in;
+    transition-delay: .5s;
+
+    padding: 10px;
+}
+
+.letter-middle{
+    background-color: #d9d9d9;
+    z-index: -10;
+    border-radius: 15px;
+
+}
+.formElement p{
+    margin: 0px;
+    padding: 0px;
+}
+.minimal-input,.minimal-textarea{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    color: #000; /* Text color */
+    padding: 0;
+    margin: 0;
+    text-align: end;
+   /*  width: 100%; */
+  }
+.minimal-textarea{
+    resize: none;
+    font-family: 'Text_regular',sans-serif;
+    text-align: start !important;
+    margin-left: 30px;
+    width: 90%;
+}
+  .minimal-input::placeholder {
+    color: #00000081; 
+    opacity: 1; 
+  }
+  .submitBtn{
+    padding: 2px 15px;
+    margin-right: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: var(--sticky-color3);
+    border-radius: 30px;
+    transform: rotate(-10deg);
+    transition: .2s;
+    user-select: none;
+
+    &:active{
+        background-color: var(--sticky-color4);
+    }
+    &:hover{
+        transform: rotate(0deg);
+    }
+  }
+.letterHead span{
+    font-size: 25px;
+}
+.letter p{
+    font-size: 25px;
+    font-family: 'Text_regular',sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.letter p span{
+    font-family: 'Text_bold',sans-serif;
+    font-size: 30px;
+}
+.letter p input{
+    text-align: start;
+}
+.letter-container{
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    rotate: -10deg;
+    transition: .5s;
+    transform: translate(-50%,-50%);
+    &:hover{
+        rotate: 0deg;
+        top:50%;
+        left:50%;
+    }
+}
+.project-head img{
+    cursor: pointer;
+}
+
+/* Media Queries for responsive  */
+
+/* Extra small devices (phones, less than 576px) */
+
+  /* Small devices (phones, ≥ 576px) */
+  @media (max-width: 576px) {
+    .navBar ul li{
+        height: 5rem;
+    width: 2.85rem;
+    }
+  }
+  
+
+@media (min-width: 764px) and (max-width: 1024px){
+    .navBar {
+        right: -8px;
+    }
+    .navBar ul li{
+        height: 6rem;
+        margin-right: 11px;
+    }
+    .heroT2{
+        font-size: 33px;
+    }
+    .heroT3{
+        font-size: 23px;
+    }
+    .selfImage img {
+        &:nth-child(2) {
+            z-index: 1;
+            height: 400px;
+            width: 400px;
+        }
+    }
+    .kindWordGrid .StickyNote {
+            width: 318px;
+            height: 265px;
+    }
+    .kindWordsText span {
+        font-size: 14px;
+    }
+    .kindWordsText p {
+        font-size: 18px;
+    }
+    .aboutStick2 .head {
+        font-size: 28px;
+    }
+    .skills p,.skillHead{
+        font-size: 20px;
+    }
+    .dd{
+        font-size: 25px;
+    }
+    .dh{
+        font-size: 23px;
+    }
+    .About-text {
+        font-size: 23px;
+    }
+    .projectSS img {
+        &:nth-child(1) {
+            width: 450px;
+        }
+    }
+    .techStack img {
+        width: 328px;
+    }
+    .techStack p{
+        top: 51px;
+        font-size: 25px;
+        
+    }
+    .techStack p span{
+        font-size: 40px;
+    }
+    .connectText {
+        font-size: 26px;
+    }
+    .letter-container {
+        top: -25%;
+        left: 45%;
+        scale: .6;
+    }
+    .letter-container {
+        &:hover {
+            rotate: 0deg;
+            top: 5%;
+            left: 47%;
+        }
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 764px){
+    .heroT2{
+        font-size: 40px;
+    }
+    .selfImage img {
+        &:nth-child(2) {
+            z-index: 1;
+            height: 350px;
+            width: 350px;
+        }
+    }
+    .headText{
+        font-size: 35px;
+    }
+    .dh{
+        font-size: 25px;
+    }
+    .dd{
+        font-size: 27px;
+    }
+    .skillHead {
+        font-size: 25px;
+    }
+    .skills p {
+        font-size: 25px;
+    }
+    .About-text {
+        font-size: 28px;
+    }
+    .projectSS img {
+        &:nth-child(1) {
+            width: 436px;
+        }
+    }
+    .flappyBird img {
+        &:nth-child(1) {
+            width: 360px !important;
+        }
+    }
+    .flappyBird img {
+        &:nth-child(2) {
+            right: -24px;
+            top: -28px;
+            height: 100px;
+        }
+    }
+    .kindWordGrid{
+        grid-template-columns: 1fr;
+    }
+    .letter-container {
+        position: static;
+        rotate: -5deg;
+        transition: .5s;
+        scale: .7;
+        margin-left: 122px;
+        margin-top: 200px;
+        
+    }
+    .alter_div{
+        height: 500px;
+    }
+    .navBar ul a li{
+        margin-right: 4px;
+    }
+    .navBar{
+        right: 4px;
+    }
+}
+
+@media (max-width:425px){
+    .heroT2{
+        font-size: 34px;
+    }
+    .selfImage img {
+        
+        &:nth-child(1) {
+            height: 65px;
+        }
+        &:nth-child(2) {
+            z-index: 1;
+            height: 250px;
+            width: 250px;
+        }
+    }
+    .StickyNote{
+        width: 317px;
+    }
+    .headText{
+        font-size: 35px;
+    }
+    .dh{
+        font-size: 22px;
+    }
+    .dd{
+        font-size: 23px;
+    }
+    .skillHead {
+        font-size: 18px;
+    }
+    .skills p {
+        font-size: 16px;
+    }
+    .head{
+        font-size: 35px !important;
+    }
+    .About-text {
+        font-size: 21px;
+    }
+    .Socials li img{
+        height: 22px;
+    }
+    .heroT3 {
+        font-size: 15px;
+    }
+    .heroT1 {
+        font-size: 27px;
+    }
+    .projectSS img {
+        &:nth-child(1) {
+            width: 300px;
+        }
+        &:nth-child(2) {
+            position: absolute;
+            right: 0px;
+            top: -6px;
+            width: 113px;
+        }
+    }
+    .headText img{
+        width: 45px;
+    }
+    .techStack img {
+        width: 280px;
+    }
+    .techStack p {
+        position: absolute;
+        top: 58px;
+        left: 63px;
+        font-size: 19px;
+        padding: 0px;
+        margin: 0px;
+        width: 70%;
+    }
+    .techStack p span {
+    font-size: 40px;
+    }
+
+    .reverbNation img:nth-child(2) {
+        right: 34px !important;
+        top: -42px !important;
+    }
+    .flappyBird img {
+        &:nth-child(1) {
+            width: 270px !important;
+        }
+    }
+    .flappyBird img {
+        &:nth-child(2) {
+            right: -24px;
+            top: -28px;
+            height: 100px;
+        }
+    }
+    .kindWordGrid{
+        grid-template-columns: 1fr;
+    }
+    .letter-container {
+        position: static;
+        rotate: -5deg;
+        transition: .5s;
+        scale: 0.5;
+        margin-left: 30px;
+        margin-top: 43px;
+    }
+    .alter_div{
+        height: 350px;
+    }
+    .connectText {
+        font-size: 30px;
+    }
+    .navBar ul a li{
+        margin-right: 4px;
+        height: 3rem;
+        width: 1.85rem;
+        &:hover{
+            height: 5rem;
+        }
+    }
+    .navBar ul a li span{
+        font-size: .7rem;
+        bottom: 13px;
+
+    }
+    .navBar{
+        right: 4px;
+    }
+    .project-head-text .img {
+        width: 100% !important;
+    }
+    .project-head-text {
+        font-size: 20px;
+    }
+    .project-head img{
+        width: 25px;
+        cursor: pointer;
+    }
+    .project-description{
+        font-size: 17px;
+    }
+    .kindWordsText p{
+        font-size: 17px;
+    }
+    .kindWordsText span{
+        font-size: 13px;
+    }
+    .kindWordGrid .StickyNote img{
+        width: 110px;
+        top: -21px !important;
+    }
+
+}
+
+
+/* Animations */
+/* Default state: path hidden */
+#mySvg path {
+    transition: stroke-dashoffset 2s ease; /* Smooth animation */
+  }
+  
+  /* When in view, trigger the animation */
+  .animate path {
+    stroke-dashoffset: 0; /* Draw the path */
+  }
+  
+  
+  

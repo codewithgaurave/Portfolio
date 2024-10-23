@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Caveat';
+  src: url('./Assets/Fonts/Caveat-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.Caveat{
+  font-family: 'Caveat',sans-serif;
+}
+@font-face {
+  font-family: 'Caveat_Brush';
+  src: url('./Assets/Fonts/CaveatBrush-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.Caveat_Brush{
+  font-family: 'Caveat_Brush',sans-serif;
+}
+@font-face {
+  font-family: 'Text_regular';
+  src: url('./Assets/Fonts/text_regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.Text_regular{
+  font-family: 'Text_regular',sans-serif;
+}
+@font-face {
+  font-family: 'Text_bold';
+  src: url('./Assets/Fonts/text_bold.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.Text_bold{
+  font-family: 'Text_bold',sans-serif;
+}
+@font-face {
+  font-family: 'Mali';
+  src: url('./Assets/Fonts/Mali-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.Mali{
+  font-family: 'Mali',sans-serif;
+}
+@font-face {
+  font-family: 'Patrick_hand';
+  src: url('./Assets/Fonts/PatrickHand-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+.Patrick_hand{
+  font-family: 'Patrick_hand',sans-serif;
+}
+
+:root{
+  --main-text-color: #000000;
+
+  --sticky-color: #D3EDFF;
+  --sticky-color1: #FFEAA6;
+  --sticky-color2: #FEFFD3;
+  --sticky-color3: #E3FFD3;
+  --sticky-color4: #FFD3D3;
+
+  --nav-stick: #E7E5E4;
+  --nav-stick1: #D6D3D1;
+  --nav-stick2: #A8A29E;
+  --nav-stick3: #78716C;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* fffbeb */
+body{
+  background-color: #fffbeb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%231c1c1c' fill-opacity='0.2'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
